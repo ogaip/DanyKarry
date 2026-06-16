@@ -1,0 +1,29 @@
+# Django (Base de datos habilitada para subir)
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+
+# IMPORTANTE: Ignoramos el journal de bloqueo para evitar conflictos de concurrencia,
+# pero permitimos que la base de datos principal 'db.sqlite3' pase libre.
+db.sqlite3-journal
+
+# Entornos virtuales y configuraciones privadas (¡No subir las API keys!)
+venv/
+env/
+.env
+settings.env
+
+# Archivos de medios cargados por el usuario de forma local
+media/
+productos/
+
+# IDEs y Editores de código
+.vscode/
+.idea/
+
+# Flutter / Dart (Estructura base del POS)
+.dart_tool/
+.packages
+build/
